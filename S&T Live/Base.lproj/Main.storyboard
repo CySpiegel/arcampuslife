@@ -7,21 +7,43 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--ARCLViewController-->
         <scene sceneID="m5M-RA-QkD">
             <objects>
-                <viewController id="Ksv-km-1OY" sceneMemberID="viewController">
+                <viewController title="ARCLViewController" id="Ksv-km-1OY" customClass="ARViewController" customModule="S_T_Live" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tfv-24-zIy">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X1n-Hy-sLQ" userLabel="Content View">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ifj-9J-JIb">
+                                        <rect key="frame" x="183" y="589" width="240" height="128"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="X1n-Hy-sLQ" firstAttribute="centerX" secondItem="Tfv-24-zIy" secondAttribute="centerX" id="2Zp-Nt-rjn"/>
+                            <constraint firstItem="X1n-Hy-sLQ" firstAttribute="bottom" secondItem="oIs-GJ-pLN" secondAttribute="bottom" id="bD5-ax-bJe"/>
+                            <constraint firstItem="X1n-Hy-sLQ" firstAttribute="leading" secondItem="oIs-GJ-pLN" secondAttribute="leading" id="mUR-hB-eeR"/>
+                            <constraint firstItem="X1n-Hy-sLQ" firstAttribute="top" secondItem="oIs-GJ-pLN" secondAttribute="top" id="z40-D8-e7J"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="oIs-GJ-pLN"/>
                     </view>
                     <navigationItem key="navigationItem" id="7gZ-Wr-Erq"/>
+                    <connections>
+                        <outlet property="contentView" destination="X1n-Hy-sLQ" id="zxF-yv-0uN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zW3-qJ-vFj" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1961" y="-604"/>
+            <point key="canvasLocation" x="1960.8695652173915" y="-604.01785714285711"/>
         </scene>
         <!--Main-->
         <scene sceneID="tne-QT-ifu">

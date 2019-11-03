@@ -12,26 +12,11 @@ import UIKit
 
 @available(iOS 11.0, *)
 class ViewController: UIViewController {
-
-    @IBOutlet var contentView: UIView!
-    
-    let sceneLocationView = SceneLocationView()
-    
-    class func loadFromStoryboard() -> ViewController {
-        return UIStoryboard(name: "Main", bundle:nil).instantiateViewController(withIdentifier: "ARCLViewController") as!
-        ViewController
-        
-    }
-    
-   
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        var myVarTest = 10
         
     }
-
-
 }
 

@@ -34,6 +34,9 @@ class appleMap2dViewController: UIViewController, CLLocationManagerDelegate, MKM
         self.mapView.showsUserLocation = true
         
         self.mapTypeSegmentedControll.addTarget(self, action: #selector(mapTypeChanged), for: .valueChanged)
+        
+//        print(myVarTest)
+        
     }
     
     @objc func mapTypeChanged(segmentedControl :UISegmentedControl) {
@@ -51,10 +54,8 @@ class appleMap2dViewController: UIViewController, CLLocationManagerDelegate, MKM
     }
     
     func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
-        
         let region = MKCoordinateRegion(center: mapView.userLocation.coordinate, span:
-            MKCoordinateSpan(latitudeDelta: 0.005, longitudeDelta: 0.005))
-        
+            MKCoordinateSpan(latitudeDelta: 0.003, longitudeDelta: 0.003))
         mapView.setRegion(region, animated: true)
     }
     
