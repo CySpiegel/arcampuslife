@@ -9,13 +9,18 @@ import ARCL
 import ARKit
 import MapKit
 import UIKit
+import Firebase
 
 @available(iOS 11.0, *)
 class ViewController: UIViewController {
+    
+    private var rootRef: DatabaseReference!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        var myVarTest = 10
+        self.rootRef = Database.database().reference()
+        
         
     }
 }

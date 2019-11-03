@@ -20,7 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         self.window = UIWindow(frame: UIScreen.main.bounds)
         self.window!.makeKeyAndVisible()
         
-        if #available(iOS 11.0, *) {
+        if #available(iOS 13.0, *) {
             guard let vc = UIStoryboard(name: "Main", bundle: nil).instantiateInitialViewController() else {
                 return false
             }
