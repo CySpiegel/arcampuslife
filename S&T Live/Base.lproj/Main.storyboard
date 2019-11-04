@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PkG-6N-UZf">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="landscape" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,11 +12,11 @@
             <objects>
                 <viewController title="ARCLViewController" id="Ksv-km-1OY" customClass="ARViewController" customModule="S_T_Live" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Tfv-24-zIy">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="X1n-Hy-sLQ" userLabel="Content View">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="44" y="44" width="808" height="349"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ifj-9J-JIb">
                                         <rect key="frame" x="183" y="589" width="240" height="128"/>
@@ -50,35 +50,73 @@
             <objects>
                 <viewController title="Main" id="BYZ-38-t0r" customClass="ViewController" customModule="S_T_Live" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcS-8v-D9h">
-                                <rect key="frame" x="184" y="453" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="VBP-xL-CzM" kind="show" id="pM7-1l-cx2"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsP-P3-QnX">
-                                <rect key="frame" x="184" y="384" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="Ksv-km-1OY" kind="show" id="Vft-bj-GGU"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wp4-B0-KKc">
-                                <rect key="frame" x="184" y="575" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="sEV-kx-Qxr" kind="show" id="SfC-RY-gQu"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="yA4-Fr-l6B">
+                                <rect key="frame" x="44" y="44" width="808" height="349"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EqH-tD-a6x">
+                                        <rect key="frame" x="0.0" y="0.0" width="808" height="115"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsP-P3-QnX">
+                                                <rect key="frame" x="341.5" y="42.5" width="125" height="30"/>
+                                                <state key="normal" title="Augmented reality"/>
+                                                <connections>
+                                                    <segue destination="Ksv-km-1OY" kind="show" id="Vft-bj-GGU"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="FsP-P3-QnX" firstAttribute="centerY" secondItem="EqH-tD-a6x" secondAttribute="centerY" id="bJr-ne-2jl"/>
+                                            <constraint firstItem="FsP-P3-QnX" firstAttribute="centerX" secondItem="EqH-tD-a6x" secondAttribute="centerX" id="bWn-V3-YU4"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ccp-sp-7IL">
+                                        <rect key="frame" x="0.0" y="117" width="808" height="115"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcS-8v-D9h" userLabel="Map View">
+                                                <rect key="frame" x="370.5" y="42.5" width="67" height="30"/>
+                                                <state key="normal" title="Map View"/>
+                                                <connections>
+                                                    <segue destination="VBP-xL-CzM" kind="show" id="pM7-1l-cx2"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="XcS-8v-D9h" firstAttribute="centerX" secondItem="Ccp-sp-7IL" secondAttribute="centerX" id="uo9-hI-mbi"/>
+                                            <constraint firstItem="XcS-8v-D9h" firstAttribute="centerY" secondItem="Ccp-sp-7IL" secondAttribute="centerY" id="xwB-iw-ufB"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVo-Fh-04N">
+                                        <rect key="frame" x="0.0" y="234" width="808" height="115"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wp4-B0-KKc">
+                                                <rect key="frame" x="362" y="42.5" width="84" height="30"/>
+                                                <state key="normal" title="Events Feed"/>
+                                                <connections>
+                                                    <segue destination="sEV-kx-Qxr" kind="show" id="SfC-RY-gQu"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstItem="Wp4-B0-KKc" firstAttribute="centerY" secondItem="UVo-Fh-04N" secondAttribute="centerY" id="VfA-jT-6dH"/>
+                                            <constraint firstItem="Wp4-B0-KKc" firstAttribute="centerX" secondItem="UVo-Fh-04N" secondAttribute="centerX" id="dXB-ei-LN2"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="yA4-Fr-l6B" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qbq-aC-Kts"/>
+                            <constraint firstItem="yA4-Fr-l6B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sF2-cb-Glw"/>
+                            <constraint firstItem="yA4-Fr-l6B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tHM-Ba-lIe"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yA4-Fr-l6B" secondAttribute="bottom" id="xk7-hu-kEl"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <navigationItem key="navigationItem" id="7vu-dn-wNh"/>
@@ -93,7 +131,7 @@
                 <navigationController title="Navigation Controller" automaticallyAdjustsScrollViewInsets="NO" id="PkG-6N-UZf" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nuk-Bv-l0P">
-                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -110,11 +148,11 @@
             <objects>
                 <viewController title="appleMap2d" id="VBP-xL-CzM" customClass="appleMap2dViewController" customModule="S_T_Live" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SR4-Lv-oii">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" showsScale="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b8q-mq-dfL">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="44" width="896" height="414"/>
                             </mapView>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ZO0-Kg-ts3">
                                 <rect key="frame" x="119" y="88" width="177" height="32"/>
@@ -152,16 +190,28 @@
             <objects>
                 <viewController title="Events Feed" id="sEV-kx-Qxr" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="TPb-DP-cRI">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="896" height="414"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="2mB-fx-F5h">
+                                <rect key="frame" x="44" y="44" width="808" height="349"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="2mB-fx-F5h" firstAttribute="centerX" secondItem="TPb-DP-cRI" secondAttribute="centerX" id="4PD-QX-0G0"/>
+                            <constraint firstItem="2mB-fx-F5h" firstAttribute="bottom" secondItem="Su9-kT-POG" secondAttribute="bottom" id="4bu-M5-1fA"/>
+                            <constraint firstItem="2mB-fx-F5h" firstAttribute="top" secondItem="Su9-kT-POG" secondAttribute="top" id="Khw-LE-2th"/>
+                            <constraint firstItem="2mB-fx-F5h" firstAttribute="leading" secondItem="Su9-kT-POG" secondAttribute="leading" id="vAw-tv-E97"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Su9-kT-POG"/>
                     </view>
                     <navigationItem key="navigationItem" id="Lms-XU-FgT"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vDr-4N-MBi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1961" y="952"/>
+            <point key="canvasLocation" x="1960.8695652173915" y="951.5625"/>
         </scene>
     </scenes>
 </document>
