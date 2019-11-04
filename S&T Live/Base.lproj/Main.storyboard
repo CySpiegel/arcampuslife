@@ -60,7 +60,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="256.5"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arkitlogo" translatesAutoresizingMaskIntoConstraints="NO" id="ua2-eG-q5V">
-                                                <rect key="frame" x="8" y="8" width="398.00000000000006" height="240.50000000000006"/>
+                                                <rect key="frame" x="8" y="8" width="398" height="240.5"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsP-P3-QnX">
                                                 <rect key="frame" x="144.5" y="113.5" width="125" height="30"/>
