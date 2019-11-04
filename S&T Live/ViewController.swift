@@ -21,6 +21,20 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         self.rootRef = Database.database().reference()
         
+        populateCampusEvent()
+    }
+    
+    private func populateCampusEvent() {
+        
+        let CampusEventRef = self .rootRef.child("events")
+        CampusEventRef.observe(.value) { snapshot in
+            let CampusEventDictionaries = snapshot.value as? [String:Any] ?? [:]
+            for (key, _) in CampusEventDictionaries {
+                if let CampusEventDict = CampusEventDictionaries[key] as? [String:Any]{
+                    
+                }
+            }
+        }
         
     }
 }
