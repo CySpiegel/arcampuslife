@@ -25,17 +25,37 @@ class ViewController: UIViewController {
     }
     
     private func populateCampusEvent() {
-        
-        let CampusEventRef = self .rootRef.child("events")
-        CampusEventRef.observe(.value) { snapshot in
-            let CampusEventDictionaries = snapshot.value as? [String:Any] ?? [:]
-            for (key, _) in CampusEventDictionaries {
-                if let CampusEventDict = CampusEventDictionaries[key] as? [String:Any]{
-                    
-                }
-            }
-        }
-        
-    }
+           
+           let campusEventRef = self.rootRef.child("events")
+           
+           campusEventRef.observe(.value) { snapshot in
+               
+               let eventDictionaries = snapshot.value as? [String:Any] ?? [:]
+            print(snapshot.value)
+               for (key, _) in eventDictionaries {
+                   
+                   if let eventDict = eventDictionaries[key] as? [String:Any] {
+                       
+                       if let campusEvent = CampusEvent(dictionary: eventDict) {
+                           
+                           DispatchQueue.main.async {
+                               
+                               let floodAnnotation = MKPointAnnotation()
+                               floodAnnotation.coordinate = CLLocationCoordinate2D(latitude: campusEvent.latitude, longitude: campusEvent.longitude)
+                               
+                               //self.mapView.addAnnotation(floodAnnotation)
+                               
+                           }
+                           
+                       }
+                       
+                   }
+               }
+               
+           }
+           
+       }
+    
+    
 }
 

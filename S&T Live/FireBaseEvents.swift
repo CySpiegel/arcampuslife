@@ -8,19 +8,24 @@
 
 import Foundation
 
-struct CampusEvents {
-    var Building: String
-    var dateEnd: String
-    var dateStart: String
-    var description: String
-    var nameOfEvent: String
-    var roomNumber: Int
-    var timeEnds: String
-    var timeStarts: String
+struct CampusEvent {
+    var Building :String
+    var dateEnd :String
+    var dateStart :String
+    var description :String
+    var nameOfEvent :String
+    var roomNumber :Int
+    var timeEnds :String
+    var timeStarts :String
+    var latitude :Double
+    var longitude :Double
     
+//    func toDictionary() -> [String:Any] {
+//        return ["latitude":self.latitude, "longitude":self.longitude]
+//   }
 }
 
-extension CampusEvents {
+extension CampusEvent {
     init?(dictionary: [String:Any]) {
         guard let Building = dictionary["building"] as? String,
             let dateEnd = dictionary["dateEnd"] as? String,
@@ -29,7 +34,9 @@ extension CampusEvents {
             let nameOfEvent = dictionary["nameOfEven"] as? String,
             let roomNumber = dictionary["room"] as? Int,
             let timeEnds = dictionary["timeEnds"] as? String,
-            let timeStarts = dictionary["timeStarts"] as? String else {
+            let timeStarts = dictionary["timeStarts"] as? String,
+            let latitude = dictionary["latitude"] as? Double,
+            let longitude = dictionary["longitude"] as? Double else {
                 return nil
         }
         self.Building = Building
@@ -40,5 +47,7 @@ extension CampusEvents {
         self.roomNumber = roomNumber
         self.timeEnds = timeEnds
         self.timeStarts = timeStarts
+        self.latitude = latitude
+        self.longitude = longitude
     }
 }
