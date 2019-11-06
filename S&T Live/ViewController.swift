@@ -31,7 +31,8 @@ class ViewController: UIViewController {
            campusEventRef.observe(.value) { snapshot in
                
                let eventDictionaries = snapshot.value as? [String:Any] ?? [:]
-            print(snapshot.value)
+            print("Printing dictionary")
+                print(eventDictionaries)
                for (key, _) in eventDictionaries {
                    
                    if let eventDict = eventDictionaries[key] as? [String:Any] {
@@ -40,8 +41,8 @@ class ViewController: UIViewController {
                            
                            DispatchQueue.main.async {
                                
-                               let floodAnnotation = MKPointAnnotation()
-                               floodAnnotation.coordinate = CLLocationCoordinate2D(latitude: campusEvent.latitude, longitude: campusEvent.longitude)
+                               let eventAnnotaion = MKPointAnnotation()
+                               eventAnnotaion.coordinate = CLLocationCoordinate2D(latitude: campusEvent.latitude, longitude: campusEvent.longitude)
                                
                                //self.mapView.addAnnotation(floodAnnotation)
                                
