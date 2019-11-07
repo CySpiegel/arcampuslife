@@ -11,52 +11,54 @@ import MapKit
 import UIKit
 import Firebase
 
+
+
 @available(iOS 11.0, *)
 class ViewController: UIViewController {
     
-    private var rootRef: DatabaseReference!
+//    private var rootRef: DatabaseReference!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.rootRef = Database.database().reference()
+//        self.rootRef = Database.database().reference()
         
-        populateCampusEvent()
+//        populateCampusEvent()
     }
     
-    private func populateCampusEvent() {
-           
-           let campusEventRef = self.rootRef.child("events")
-           
-           campusEventRef.observe(.value) { snapshot in
-               
-               let eventDictionaries = snapshot.value as? [String:Any] ?? [:]
-            print("Printing dictionary")
-                print(eventDictionaries)
-               for (key, _) in eventDictionaries {
-                   
-                   if let eventDict = eventDictionaries[key] as? [String:Any] {
-                       
-                       if let campusEvent = CampusEvent(dictionary: eventDict) {
-                           
-                           DispatchQueue.main.async {
-                               
-                               let eventAnnotaion = MKPointAnnotation()
-                               eventAnnotaion.coordinate = CLLocationCoordinate2D(latitude: campusEvent.latitude, longitude: campusEvent.longitude)
-                               
-                               //self.mapView.addAnnotation(floodAnnotation)
-                               
-                           }
-                           
-                       }
-                       
-                   }
-               }
-               
-           }
-           
-       }
-    
+//    private func populateCampusEvent() {
+//
+//           let campusEventRef = self.rootRef.child("events")
+//
+//           campusEventRef.observe(.value) { snapshot in
+//
+//               let eventDictionaries = snapshot.value as? [String:Any] ?? [:]
+//            //print("Printing dictionary")
+//              //  print(eventDictionaries)
+//               for (key, _) in eventDictionaries {
+//
+//                   if let eventDict = eventDictionaries[key] as? [String:Any] {
+//
+//                       if let campusEvent = CampusEvent(dictionary: eventDict) {
+//
+//                           DispatchQueue.main.async {
+//
+//                               let eventAnnotaion = MKPointAnnotation()
+//                               eventAnnotaion.coordinate = CLLocationCoordinate2D(latitude: campusEvent.latitude, longitude: campusEvent.longitude)
+//
+//                               //self.mapView.addAnnotation(floodAnnotation)
+//
+//                           }
+//
+//                       }
+//
+//                   }
+//               }
+//
+//           }
+//
+//       }
+//
     
 }
 

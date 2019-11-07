@@ -13,8 +13,8 @@ struct CampusEvent {
     var dateEnd :String
     var dateStart :String
     var description :String
-    var nameOfEvent :String
-    var roomNumber :Int
+    var name :String
+    var room :String
     var timeEnds :String
     var timeStarts :String
     var latitude :Double
@@ -31,23 +31,28 @@ extension CampusEvent {
             let dateEnd = dictionary["dateEnd"] as? String,
             let dateStart = dictionary["dateStart"] as? String,
             let description = dictionary["description"] as? String,
-            let nameOfEvent = dictionary["nameOfEven"] as? String,
-            let roomNumber = dictionary["room"] as? Int,
+            let nameOfEvent = dictionary["name"] as? String,
+            let roomNumber = dictionary["room"] as? String,
             let timeEnds = dictionary["timeEnds"] as? String,
             let timeStarts = dictionary["timeStarts"] as? String,
             let latitude = dictionary["latitude"] as? Double,
             let longitude = dictionary["longitude"] as? Double else {
+                print("Something has failed during the creation of dictionary with dictionary \(dictionary)")
                 return nil
         }
+        
+        print("Attempting to create Dictionary")
         self.Building = Building
         self.dateEnd = dateEnd
         self.dateStart = dateStart
         self.description = description
-        self.nameOfEvent = nameOfEvent
-        self.roomNumber = roomNumber
+        self.name = nameOfEvent
+        self.room = roomNumber
         self.timeEnds = timeEnds
         self.timeStarts = timeStarts
         self.latitude = latitude
         self.longitude = longitude
+        
+        
     }
 }
