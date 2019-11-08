@@ -1,5 +1,8 @@
 # arcampuslife
 
+# Classrooms/Labs 1-18 
+used https://www.gps-coordinates.net to grab exact coordinates
+
 1  Bertelsmeyer Hall 
 	1101 N. State St. Rolla MO 65409
 	37.9526759, -91.7756332
