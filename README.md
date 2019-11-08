@@ -5,7 +5,7 @@ used https://www.gps-coordinates.net to grab exact coordinates
 
 1  Bertelsmeyer Hall 
 	1101 N. State St. Rolla MO 65409
-	37.9526759, -91.7756332
+	<br />37.9526759, -91.7756332
   
 2  Butler-Carlton Civil Engineering Hall 
 	1401 North Pine Street, Rolla, MO 65409
