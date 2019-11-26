@@ -14,12 +14,12 @@
 		7B52974B236A51B600EB9228 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B529749236A51B600EB9228 /* Main.storyboard */; };
 		7B52974D236A51B700EB9228 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7B52974C236A51B700EB9228 /* Assets.xcassets */; };
 		7B529750236A51B700EB9228 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7B52974E236A51B700EB9228 /* LaunchScreen.storyboard */; };
-		7B606CF32372AE83004E18C2 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7B606CF22372AE83004E18C2 /* GoogleService-Info.plist */; };
 		7B9812C4236DFDC700113230 /* appleMap2dViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9812C3236DFDC700113230 /* appleMap2dViewController.swift */; };
 		7B9812C6236E388100113230 /* ARViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9812C5236E388100113230 /* ARViewController.swift */; };
 		7B9812C8236E41DF00113230 /* NotSupportedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9812C7236E41DF00113230 /* NotSupportedViewController.swift */; };
 		7B9812CA236E470200113230 /* ARViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9812C9236E470200113230 /* ARViewControllerDelegate.swift */; };
 		7B99325F236F791D006C8702 /* FireBaseEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B99325E236F791D006C8702 /* FireBaseEvents.swift */; };
+		B8E3C10E2384E32D00A58DCD /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B8E3C10D2384E32D00A58DCD /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,13 +32,13 @@
 		7B52974C236A51B700EB9228 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7B52974F236A51B700EB9228 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B529751236A51B700EB9228 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7B606CF22372AE83004E18C2 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		7B9812C3236DFDC700113230 /* appleMap2dViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appleMap2dViewController.swift; sourceTree = "<group>"; };
 		7B9812C5236E388100113230 /* ARViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewController.swift; sourceTree = "<group>"; };
 		7B9812C7236E41DF00113230 /* NotSupportedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotSupportedViewController.swift; sourceTree = "<group>"; };
 		7B9812C9236E470200113230 /* ARViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ARViewControllerDelegate.swift; sourceTree = "<group>"; };
 		7B99325E236F791D006C8702 /* FireBaseEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseEvents.swift; sourceTree = "<group>"; };
 		A87EB8B4EF8DFF34A691EE71 /* Pods-S&T Live.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S&T Live.release.xcconfig"; path = "Target Support Files/Pods-S&T Live/Pods-S&T Live.release.xcconfig"; sourceTree = "<group>"; };
+		B8E3C10D2384E32D00A58DCD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		D256ACE9F10CECC17914BA73 /* Pods_S_T_Live.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_S_T_Live.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -91,9 +91,9 @@
 				7B9812C3236DFDC700113230 /* appleMap2dViewController.swift */,
 				7B529745236A51B600EB9228 /* SceneDelegate.swift */,
 				7B529747236A51B600EB9228 /* ViewController.swift */,
-				7B606CF22372AE83004E18C2 /* GoogleService-Info.plist */,
 				7B529749236A51B600EB9228 /* Main.storyboard */,
 				7B52974C236A51B700EB9228 /* Assets.xcassets */,
+				B8E3C10D2384E32D00A58DCD /* GoogleService-Info.plist */,
 				7B52974E236A51B700EB9228 /* LaunchScreen.storyboard */,
 				7B529751236A51B700EB9228 /* Info.plist */,
 			);
@@ -170,7 +170,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7B529750236A51B700EB9228 /* LaunchScreen.storyboard in Resources */,
-				7B606CF32372AE83004E18C2 /* GoogleService-Info.plist in Resources */,
+				B8E3C10E2384E32D00A58DCD /* GoogleService-Info.plist in Resources */,
 				7B52974D236A51B700EB9228 /* Assets.xcassets in Resources */,
 				7B52974B236A51B600EB9228 /* Main.storyboard in Resources */,
 			);
@@ -378,14 +378,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7JJ2UK7C9S;
+				DEVELOPMENT_TEAM = 9HNU6KR2GZ;
 				INFOPLIST_FILE = "S&T Live/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "live.mstcampus.CS4096.S-T-Live";
+				PRODUCT_BUNDLE_IDENTIFIER = "live.mstcampus.CS4096.S-T-Livee";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
@@ -398,14 +398,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 7JJ2UK7C9S;
+				DEVELOPMENT_TEAM = 9HNU6KR2GZ;
 				INFOPLIST_FILE = "S&T Live/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "live.mstcampus.CS4096.S-T-Live";
+				PRODUCT_BUNDLE_IDENTIFIER = "live.mstcampus.CS4096.S-T-Livee";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;

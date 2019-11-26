@@ -110,13 +110,13 @@ extension ARViewController {
 //        //custom poi
 //        let buttlerhall = buildNode(latitude: 37.955689, longitude: -91.771831, altitude: 236, imageName: "pin")
 //        nodes.append(buttlerhall)
-        let havenerCenter = buildViewNode(latitude: 37.954950, longitude: -91.776709, altitude: 320, text: "Havener")
-        nodes.append(havenerCenter)
+        //let havenerCenter = buildViewNode(latitude: 37.954950, longitude: -91.776709, altitude: 320, text: "Havener")
+        //nodes.append(havenerCenter)
         
-        let library = buildViewNode(latitude: 37.955652, longitude: -91.773490, altitude: 320, text: "Library")
-        nodes.append(library)
+        //let library = buildViewNode(latitude: 37.955652, longitude: -91.773490, altitude: 320, text: "Library")
+        //nodes.append(library)
         
-        let bchViewNode = buildViewNode(latitude: 37.955689, longitude: -91.771831, altitude: 320, text: "BCH")
+        let bchViewNode = buildNodeUI(latitude: 37.955689, longitude: -91.771831, altitude: 250, text: "BCH")
         nodes.append(bchViewNode)
 
         return nodes
@@ -158,6 +158,71 @@ extension ARViewController {
         label.backgroundColor = .green
         label.textAlignment = .center
         return LocationAnnotationNode(location: location, view: label)
+    }
+    
+    func buildNodeUI(latitude: CLLocationDegrees, longitude: CLLocationDegrees,
+                     altitude: CLLocationDistance, text: String) -> LocationAnnotationNode {
+        
+        let coordinate = CLLocationCoordinate2D(latitude: latitude, longitude: longitude)
+        let location = CLLocation(coordinate: coordinate, altitude: altitude)
+        //let id = id
+        
+        let myView = UIView(frame: CGRect(x: 0, y: 0, width: 250, height: 600))
+        myView.backgroundColor = UIColor(white:1, alpha: 1)
+        myView.layer.cornerRadius = 40.0
+        //myView.allowUserInteraction
+        //myView.userInteractionEnabled=YES
+        //self.addSubview(myView)
+        
+        let label = UILabel(frame: CGRect(x: 0, y: 0, width: 250, height: 25))
+        label.backgroundColor=UIColor(red: 0, green: 0.2784, blue: 0.0314, alpha: 1.0)
+        label.textAlignment = NSTextAlignment.center
+        label.text = text
+        myView.addSubview(label)
+        
+        let imageName = text
+        let image = UIImage(named: imageName)
+        let imageView = UIImageView(image: image!)
+        imageView.frame = CGRect(x: 0, y: 25, width: 250, height: 250)
+        myView.addSubview(imageView)
+        //myView.isUserInteractionEnabled = true
+        //contentView.bringSubviewToFront(myView)
+        
+        let imageName1 = text+"1"
+        let image1 = UIImage(named: imageName1)
+        let imageView1 = UIImageView(image: image1!)
+        imageView1.frame = CGRect(x: 0, y: 325, width: 250, height: 250)
+        myView.addSubview(imageView1)
+        
+        let button = UIButton(frame: CGRect(x: 0, y: 550, width: 250, height: 50))
+        button.setTitle("Distance(button object)", for: .normal)
+        button.backgroundColor=UIColor(red: 0, green: 0.2784, blue: 0.0314, alpha: 1.0)
+        button.layer.cornerRadius = 24.0
+        button.setTitleColor(UIColor.black, for: .normal)
+        //button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        //button.targetNode = self.scene
+        myView.addSubview(button)
+        
+        //sceneLocationView.bringSubviewToFront(myView)
+        //.view.bringSubviewToFront(myView)
+        //sceneLocationView.addChild(myView)
+        //let scroll = UIScrollView(frame: CGRect(x: 0, y: 30, width: 200, height: 150))
+        //scroll.backgroundColor=UIColor(red: 5, green: 0.2784, blue: 0.0314, alpha: 1.0)
+        //scroll.textAlignment = NSTextAlignment.center
+        //scroll.text = text
+        //myView.addSubview(scroll)
+        
+       
+
+        
+        //let loc1 = CLLocation(latitude: coord1.latitude, longitude: coord1.longitude)
+        //let dist = UILabel(frame: CGRect(x: 0, y: 25, width: 200, height: 25))
+        //dist.backgroundColor=UIColor(red: 0, green: 0.2784, blue: 0.0314, alpha: 1.0)
+        //dist.textAlignment = NSTextAlignment.center
+        //dist.text = text
+        //myView.addSubview(dist)
+        
+        return LocationAnnotationNode(location: location, view: myView)
     }
 }
 
