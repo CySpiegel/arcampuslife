@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		38D5605B1EF008D3B3F651B7 /* Pods_S_T_Live.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D256ACE9F10CECC17914BA73 /* Pods_S_T_Live.framework */; };
+		7B41903423976293005346B2 /* EventsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B41903323976293005346B2 /* EventsFeedViewController.swift */; };
+		7B41903723979F2D005346B2 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B41903623979F2D005346B2 /* ViewControllerTableViewCell.swift */; };
 		7B529744236A51B600EB9228 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B529743236A51B600EB9228 /* AppDelegate.swift */; };
 		7B529746236A51B600EB9228 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B529745236A51B600EB9228 /* SceneDelegate.swift */; };
 		7B529748236A51B600EB9228 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B529747236A51B600EB9228 /* ViewController.swift */; };
@@ -24,6 +26,8 @@
 
 /* Begin PBXFileReference section */
 		0A8D4EBB14F79C4365093E0F /* Pods-S&T Live.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S&T Live.debug.xcconfig"; path = "Target Support Files/Pods-S&T Live/Pods-S&T Live.debug.xcconfig"; sourceTree = "<group>"; };
+		7B41903323976293005346B2 /* EventsFeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsFeedViewController.swift; sourceTree = "<group>"; };
+		7B41903623979F2D005346B2 /* ViewControllerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerTableViewCell.swift; sourceTree = "<group>"; };
 		7B529740236A51B600EB9228 /* S&T Live.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "S&T Live.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B529743236A51B600EB9228 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		7B529745236A51B600EB9228 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		7B41903523977C90005346B2 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7B529737236A51B600EB9228 = {
 			isa = PBXGroup;
 			children = (
@@ -84,9 +95,11 @@
 		7B529742236A51B600EB9228 /* S&T Live */ = {
 			isa = PBXGroup;
 			children = (
+				7B41903523977C90005346B2 /* Model */,
 				7BA33AE2238F720300A59346 /* GoogleService-Info.plist */,
-				7B9812C7236E41DF00113230 /* NotSupportedViewController.swift */,
 				7B99325E236F791D006C8702 /* FireBaseEvents.swift */,
+				7B41903623979F2D005346B2 /* ViewControllerTableViewCell.swift */,
+				7B9812C7236E41DF00113230 /* NotSupportedViewController.swift */,
 				7B9812C5236E388100113230 /* ARViewController.swift */,
 				7B9812C9236E470200113230 /* ARViewControllerDelegate.swift */,
 				7B529743236A51B600EB9228 /* AppDelegate.swift */,
@@ -94,6 +107,7 @@
 				7B529745236A51B600EB9228 /* SceneDelegate.swift */,
 				7B529747236A51B600EB9228 /* ViewController.swift */,
 				7B529749236A51B600EB9228 /* Main.storyboard */,
+				7B41903323976293005346B2 /* EventsFeedViewController.swift */,
 				7B52974C236A51B700EB9228 /* Assets.xcassets */,
 				B8E3C10D2384E32D00A58DCD /* GoogleService-Info.plist */,
 				7B52974E236A51B700EB9228 /* LaunchScreen.storyboard */,
@@ -229,10 +243,12 @@
 			files = (
 				7B9812C6236E388100113230 /* ARViewController.swift in Sources */,
 				7B529748236A51B600EB9228 /* ViewController.swift in Sources */,
+				7B41903723979F2D005346B2 /* ViewControllerTableViewCell.swift in Sources */,
 				7B9812C8236E41DF00113230 /* NotSupportedViewController.swift in Sources */,
 				7B9812CA236E470200113230 /* ARViewControllerDelegate.swift in Sources */,
 				7B529744236A51B600EB9228 /* AppDelegate.swift in Sources */,
 				7B99325F236F791D006C8702 /* FireBaseEvents.swift in Sources */,
+				7B41903423976293005346B2 /* EventsFeedViewController.swift in Sources */,
 				7B9812C4236DFDC700113230 /* appleMap2dViewController.swift in Sources */,
 				7B529746236A51B600EB9228 /* SceneDelegate.swift in Sources */,
 			);
