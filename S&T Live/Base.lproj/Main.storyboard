@@ -2,7 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PkG-6N-UZf">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -54,17 +54,16 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="yA4-Fr-l6B">
-                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="775"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EqH-tD-a6x">
-                                        <rect key="frame" x="0.0" y="0.0" width="414" height="256.5"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EqH-tD-a6x" userLabel="Building AR">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="257"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arkitlogo" translatesAutoresizingMaskIntoConstraints="NO" id="ua2-eG-q5V">
-                                                <rect key="frame" x="8" y="8" width="398" height="240.5"/>
+                                                <rect key="frame" x="8" y="8" width="398.00000000000006" height="241.00000000000006"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsP-P3-QnX">
-                                                <rect key="frame" x="144.5" y="113.5" width="125" height="30"/>
-                                                <state key="normal" title="Augmented reality"/>
+                                                <rect key="frame" x="8" y="8" width="398" height="241"/>
                                                 <connections>
                                                     <segue destination="Ksv-km-1OY" kind="show" id="Vft-bj-GGU"/>
                                                 </connections>
@@ -72,20 +71,24 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="ua2-eG-q5V" firstAttribute="centerX" secondItem="FsP-P3-QnX" secondAttribute="centerX" id="FsL-bj-Zga"/>
-                                            <constraint firstItem="ua2-eG-q5V" firstAttribute="top" secondItem="EqH-tD-a6x" secondAttribute="topMargin" id="PQf-Ru-hDf"/>
-                                            <constraint firstItem="FsP-P3-QnX" firstAttribute="centerY" secondItem="EqH-tD-a6x" secondAttribute="centerY" id="bJr-ne-2jl"/>
-                                            <constraint firstItem="FsP-P3-QnX" firstAttribute="centerX" secondItem="EqH-tD-a6x" secondAttribute="centerX" id="bWn-V3-YU4"/>
-                                            <constraint firstItem="ua2-eG-q5V" firstAttribute="centerY" secondItem="FsP-P3-QnX" secondAttribute="centerY" id="pUv-ch-JO4"/>
-                                            <constraint firstItem="ua2-eG-q5V" firstAttribute="leading" secondItem="EqH-tD-a6x" secondAttribute="leadingMargin" id="qfQ-T5-oHl"/>
+                                            <constraint firstItem="FsP-P3-QnX" firstAttribute="bottom" secondItem="EqH-tD-a6x" secondAttribute="bottomMargin" id="DXW-6a-xhM"/>
+                                            <constraint firstItem="ua2-eG-q5V" firstAttribute="top" secondItem="FsP-P3-QnX" secondAttribute="top" id="DtJ-KC-7nL"/>
+                                            <constraint firstItem="FsP-P3-QnX" firstAttribute="centerY" secondItem="ua2-eG-q5V" secondAttribute="centerY" id="LiX-jY-zvV"/>
+                                            <constraint firstItem="FsP-P3-QnX" firstAttribute="trailing" secondItem="ua2-eG-q5V" secondAttribute="trailing" id="Lr9-r1-FD2"/>
+                                            <constraint firstItem="FsP-P3-QnX" firstAttribute="top" secondItem="EqH-tD-a6x" secondAttribute="topMargin" id="hkI-Wp-MZv"/>
+                                            <constraint firstItem="ua2-eG-q5V" firstAttribute="leading" secondItem="FsP-P3-QnX" secondAttribute="leading" id="md3-cs-Ye0"/>
+                                            <constraint firstItem="FsP-P3-QnX" firstAttribute="leading" secondItem="EqH-tD-a6x" secondAttribute="leadingMargin" id="oye-Cs-jhg"/>
+                                            <constraint firstItem="FsP-P3-QnX" firstAttribute="trailing" secondItem="EqH-tD-a6x" secondAttribute="trailingMargin" id="zJc-EZ-zrN"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ccp-sp-7IL">
-                                        <rect key="frame" x="0.0" y="258.5" width="414" height="257"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ccp-sp-7IL" userLabel="Map View">
+                                        <rect key="frame" x="0.0" y="259" width="414" height="257"/>
                                         <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass-transparent-png-5" translatesAutoresizingMaskIntoConstraints="NO" id="Kqk-WD-hjS">
+                                                <rect key="frame" x="8" y="8" width="398.00000000000045" height="241.00000000000045"/>
+                                            </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcS-8v-D9h" userLabel="Map View">
-                                                <rect key="frame" x="173.5" y="113.5" width="67" height="30"/>
-                                                <state key="normal" title="Map View"/>
+                                                <rect key="frame" x="8" y="8" width="398" height="241"/>
                                                 <connections>
                                                     <segue destination="VBP-xL-CzM" kind="show" id="pM7-1l-cx2"/>
                                                 </connections>
@@ -93,15 +96,24 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="XcS-8v-D9h" firstAttribute="centerX" secondItem="Ccp-sp-7IL" secondAttribute="centerX" id="uo9-hI-mbi"/>
-                                            <constraint firstItem="XcS-8v-D9h" firstAttribute="centerY" secondItem="Ccp-sp-7IL" secondAttribute="centerY" id="xwB-iw-ufB"/>
+                                            <constraint firstItem="Kqk-WD-hjS" firstAttribute="top" secondItem="XcS-8v-D9h" secondAttribute="top" id="H0f-Av-YHY"/>
+                                            <constraint firstItem="Kqk-WD-hjS" firstAttribute="leading" secondItem="XcS-8v-D9h" secondAttribute="leading" id="IJR-q1-9iM"/>
+                                            <constraint firstItem="Kqk-WD-hjS" firstAttribute="bottom" secondItem="Ccp-sp-7IL" secondAttribute="bottomMargin" id="TLt-M9-qFm"/>
+                                            <constraint firstItem="XcS-8v-D9h" firstAttribute="top" secondItem="Ccp-sp-7IL" secondAttribute="topMargin" id="d30-yT-1uJ"/>
+                                            <constraint firstItem="Kqk-WD-hjS" firstAttribute="bottom" secondItem="XcS-8v-D9h" secondAttribute="bottom" id="n0O-fH-adv"/>
+                                            <constraint firstItem="XcS-8v-D9h" firstAttribute="leading" secondItem="Ccp-sp-7IL" secondAttribute="leadingMargin" id="nQw-gY-bSx"/>
+                                            <constraint firstItem="Kqk-WD-hjS" firstAttribute="trailing" secondItem="XcS-8v-D9h" secondAttribute="trailing" id="uwT-BC-xgw"/>
+                                            <constraint firstItem="XcS-8v-D9h" firstAttribute="trailing" secondItem="Ccp-sp-7IL" secondAttribute="trailingMargin" id="wi9-nG-IIg"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVo-Fh-04N">
-                                        <rect key="frame" x="0.0" y="517.5" width="414" height="256.5"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVo-Fh-04N" userLabel="Event Feed">
+                                        <rect key="frame" x="0.0" y="518" width="414" height="257"/>
                                         <subviews>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wp4-B0-KKc">
-                                                <rect key="frame" x="165" y="113" width="84" height="30"/>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qQX-ft-xYD">
+                                                <rect key="frame" x="8" y="8" width="398" height="241"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wp4-B0-KKc">
+                                                <rect key="frame" x="8" y="8" width="398" height="240"/>
                                                 <state key="normal" title="Events Feed"/>
                                                 <connections>
                                                     <segue destination="sEV-kx-Qxr" kind="show" id="SfC-RY-gQu"/>
@@ -110,8 +122,12 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="Wp4-B0-KKc" firstAttribute="centerY" secondItem="UVo-Fh-04N" secondAttribute="centerY" id="VfA-jT-6dH"/>
-                                            <constraint firstItem="Wp4-B0-KKc" firstAttribute="centerX" secondItem="UVo-Fh-04N" secondAttribute="centerX" id="dXB-ei-LN2"/>
+                                            <constraint firstItem="qQX-ft-xYD" firstAttribute="centerY" secondItem="Wp4-B0-KKc" secondAttribute="centerY" id="Ay2-dt-dD6"/>
+                                            <constraint firstItem="qQX-ft-xYD" firstAttribute="leading" secondItem="UVo-Fh-04N" secondAttribute="leadingMargin" id="FRw-H4-PUi"/>
+                                            <constraint firstItem="qQX-ft-xYD" firstAttribute="top" secondItem="UVo-Fh-04N" secondAttribute="topMargin" id="J2G-bc-rnL"/>
+                                            <constraint firstItem="qQX-ft-xYD" firstAttribute="trailing" secondItem="UVo-Fh-04N" secondAttribute="trailingMargin" id="SjH-Qq-zQe"/>
+                                            <constraint firstItem="qQX-ft-xYD" firstAttribute="centerX" secondItem="Wp4-B0-KKc" secondAttribute="centerX" id="lIA-GJ-tC4"/>
+                                            <constraint firstItem="qQX-ft-xYD" firstAttribute="centerY" secondItem="UVo-Fh-04N" secondAttribute="centerY" id="xcd-IO-24a"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -119,10 +135,10 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="yA4-Fr-l6B" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="qbq-aC-Kts"/>
-                            <constraint firstItem="yA4-Fr-l6B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sF2-cb-Glw"/>
-                            <constraint firstItem="yA4-Fr-l6B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="tHM-Ba-lIe"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="yA4-Fr-l6B" secondAttribute="bottom" id="xk7-hu-kEl"/>
+                            <constraint firstItem="yA4-Fr-l6B" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="DiK-Bq-IP3"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="yA4-Fr-l6B" secondAttribute="bottom" constant="-1" id="b3n-Tt-sxO"/>
+                            <constraint firstItem="yA4-Fr-l6B" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="bhZ-Tg-Dw4"/>
+                            <constraint firstItem="yA4-Fr-l6B" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="okZ-IK-rZ5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -223,5 +239,6 @@
     </scenes>
     <resources>
         <image name="arkitlogo" width="196" height="214"/>
+        <image name="compass-transparent-png-5" width="1601" height="1608.5"/>
     </resources>
 </document>

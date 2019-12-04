@@ -94,19 +94,6 @@ extension ARViewController {
     func buildBuildings() -> [LocationAnnotationNode] {
         var nodes: [LocationAnnotationNode] = []
 
-//        let spaceNeedle = buildNode(latitude: 47.6205, longitude: -122.3493, altitude: 225, imageName: "pin")
-//        nodes.append(spaceNeedle)
-//
-//        let empireStateBuilding = buildNode(latitude: 40.7484, longitude: -73.9857, altitude: 14.3, imageName: "pin")
-//        nodes.append(empireStateBuilding)
-//
-//        let canaryWharf = buildNode(latitude: 51.504607, longitude: -0.019592, altitude: 236, imageName: "pin")
-//        nodes.append(canaryWharf)
-//
-//        let applePark = buildViewNode(latitude: 37.334807, longitude: -122.009076, altitude: 100, text: "Apple Park")
-//        nodes.append(applePark)
-//
-//
 //        //custom poi
 //        let buttlerhall = buildNode(latitude: 37.955689, longitude: -91.771831, altitude: 236, imageName: "pin")
 //        nodes.append(buttlerhall)
