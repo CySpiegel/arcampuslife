@@ -39,10 +39,7 @@ class appleMap2dViewController: UIViewController, CLLocationManagerDelegate, MKM
         self.mapTypeSegmentedControll.addTarget(self, action: #selector(mapTypeChanged), for: .valueChanged)
         
         self.rootRef = Database.database().reference()
-        let london = MKPointAnnotation()
-        london.title = "London"
-        london.coordinate = CLLocationCoordinate2D(latitude: 51.507222, longitude: -0.1275)
-        mapView.addAnnotation(london)
+        
         populateCampusEvent()
         
 //        print(myVarTest)
@@ -106,6 +103,7 @@ class appleMap2dViewController: UIViewController, CLLocationManagerDelegate, MKM
                                 
                                 let eventAnnotaion = MKPointAnnotation()
                                 eventAnnotaion.title = campusEvent.name
+                                eventAnnotaion.subtitle = "Date: " + campusEvent.dateStart + " Room: " + campusEvent.room
                                 eventAnnotaion.coordinate = CLLocationCoordinate2D(latitude: campusEvent.latitude, longitude: campusEvent.longitude)
                                 
                                 self.mapView.addAnnotation(eventAnnotaion)
