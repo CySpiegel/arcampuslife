@@ -60,7 +60,7 @@
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="257"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="arkitlogo" translatesAutoresizingMaskIntoConstraints="NO" id="ua2-eG-q5V">
-                                                <rect key="frame" x="8" y="8" width="398" height="241"/>
+                                                <rect key="frame" x="8" y="8" width="398.00000000000006" height="241.00000000000006"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FsP-P3-QnX">
                                                 <rect key="frame" x="8" y="8" width="398" height="241"/>
@@ -85,7 +85,7 @@
                                         <rect key="frame" x="0.0" y="259" width="414" height="257"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="compass-transparent-png-5" translatesAutoresizingMaskIntoConstraints="NO" id="Kqk-WD-hjS">
-                                                <rect key="frame" x="8" y="8" width="398" height="241"/>
+                                                <rect key="frame" x="8" y="8" width="398.00000000000045" height="241.00000000000045"/>
                                             </imageView>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XcS-8v-D9h" userLabel="Map View">
                                                 <rect key="frame" x="8" y="8" width="398" height="241"/>
@@ -109,12 +109,11 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="UVo-Fh-04N" userLabel="Event Feed">
                                         <rect key="frame" x="0.0" y="518" width="414" height="257"/>
                                         <subviews>
-                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="qQX-ft-xYD">
-                                                <rect key="frame" x="8" y="8" width="398" height="241"/>
-                                            </imageView>
-                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wp4-B0-KKc">
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="free-png-upcoming-events-clipart-icons-for-calendar-of-events-800" translatesAutoresizingMaskIntoConstraints="NO" id="Blm-0Z-n9T">
                                                 <rect key="frame" x="8" y="8" width="398" height="240"/>
-                                                <state key="normal" title="Events Feed"/>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wp4-B0-KKc">
+                                                <rect key="frame" x="8" y="8" width="398" height="240"/>
                                                 <connections>
                                                     <segue destination="sEV-kx-Qxr" kind="show" id="SfC-RY-gQu"/>
                                                 </connections>
@@ -122,12 +121,14 @@
                                         </subviews>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstItem="qQX-ft-xYD" firstAttribute="centerY" secondItem="Wp4-B0-KKc" secondAttribute="centerY" id="Ay2-dt-dD6"/>
-                                            <constraint firstItem="qQX-ft-xYD" firstAttribute="leading" secondItem="UVo-Fh-04N" secondAttribute="leadingMargin" id="FRw-H4-PUi"/>
-                                            <constraint firstItem="qQX-ft-xYD" firstAttribute="top" secondItem="UVo-Fh-04N" secondAttribute="topMargin" id="J2G-bc-rnL"/>
-                                            <constraint firstItem="qQX-ft-xYD" firstAttribute="trailing" secondItem="UVo-Fh-04N" secondAttribute="trailingMargin" id="SjH-Qq-zQe"/>
-                                            <constraint firstItem="qQX-ft-xYD" firstAttribute="centerX" secondItem="Wp4-B0-KKc" secondAttribute="centerX" id="lIA-GJ-tC4"/>
-                                            <constraint firstItem="qQX-ft-xYD" firstAttribute="centerY" secondItem="UVo-Fh-04N" secondAttribute="centerY" id="xcd-IO-24a"/>
+                                            <constraint firstItem="Wp4-B0-KKc" firstAttribute="top" secondItem="Blm-0Z-n9T" secondAttribute="top" id="0qt-JE-fs2"/>
+                                            <constraint firstItem="Blm-0Z-n9T" firstAttribute="leading" secondItem="UVo-Fh-04N" secondAttribute="leadingMargin" id="PYd-hj-eeL"/>
+                                            <constraint firstItem="Blm-0Z-n9T" firstAttribute="trailing" secondItem="UVo-Fh-04N" secondAttribute="trailingMargin" id="WPD-ij-b5E"/>
+                                            <constraint firstItem="Blm-0Z-n9T" firstAttribute="trailing" secondItem="Wp4-B0-KKc" secondAttribute="trailing" id="Wca-YV-6Ug"/>
+                                            <constraint firstItem="Blm-0Z-n9T" firstAttribute="bottom" secondItem="UVo-Fh-04N" secondAttribute="bottomMargin" id="gV6-DJ-8C3"/>
+                                            <constraint firstItem="Blm-0Z-n9T" firstAttribute="leading" secondItem="Wp4-B0-KKc" secondAttribute="leading" id="sjt-hT-dmD"/>
+                                            <constraint firstItem="Blm-0Z-n9T" firstAttribute="bottom" secondItem="Wp4-B0-KKc" secondAttribute="bottom" id="xb8-Nj-GB6"/>
+                                            <constraint firstItem="Blm-0Z-n9T" firstAttribute="top" secondItem="UVo-Fh-04N" secondAttribute="topMargin" id="zV4-wk-ror"/>
                                         </constraints>
                                     </view>
                                 </subviews>
@@ -329,5 +330,6 @@
     <resources>
         <image name="arkitlogo" width="196" height="214"/>
         <image name="compass-transparent-png-5" width="1601" height="1608.5"/>
+        <image name="free-png-upcoming-events-clipart-icons-for-calendar-of-events-800" width="800" height="700"/>
     </resources>
 </document>
