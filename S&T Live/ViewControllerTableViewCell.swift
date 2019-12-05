@@ -15,6 +15,12 @@ class ViewControllerTableViewCell: UITableViewCell {
     @IBOutlet weak var lblEventName: UILabel!
     
     @IBOutlet weak var lblLocation: UILabel!
+    
+    @IBOutlet weak var lblDate: UILabel!
+    
+    @IBOutlet weak var lblRoomNumber: UILabel!
+    
+    @IBOutlet weak var lblStartTime: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

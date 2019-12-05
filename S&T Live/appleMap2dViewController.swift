@@ -20,6 +20,8 @@ class appleMap2dViewController: UIViewController, CLLocationManagerDelegate, MKM
     
     private var rootRef: DatabaseReference!
     
+    var firstLocation = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -61,11 +63,14 @@ class appleMap2dViewController: UIViewController, CLLocationManagerDelegate, MKM
         }
     }
     
-//    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
-//        let region = MKCoordinateRegion(center: mapView.userLocation.coordinate, span:
-//            MKCoordinateSpan(latitudeDelta: 0.003, longitudeDelta: 0.003))
-//        mapView.setRegion(region, animated: true)
-//    }
+    func mapView(_ mapView: MKMapView, didUpdate userLocation: MKUserLocation) {
+        let region = MKCoordinateRegion(center: mapView.userLocation.coordinate, span:
+            MKCoordinateSpan(latitudeDelta: 0.003, longitudeDelta: 0.003))
+        if firstLocation == false {
+        mapView.setRegion(region, animated: true)
+            firstLocation = true
+        }
+    }
     
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         guard annotation is MKPointAnnotation else { return nil }

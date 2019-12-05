@@ -103,8 +103,38 @@ extension ARViewController {
         //let library = buildViewNode(latitude: 37.955652, longitude: -91.773490, altitude: 320, text: "Library")
         //nodes.append(library)
         
-        let bchViewNode = buildNodeUI(latitude: 37.955689, longitude: -91.771831, altitude: 250, text: "BCH")
+        let bchViewNode = buildNodeUI(latitude: 37.9556544, longitude: -91.7717959, altitude: 340, text: "BCH")
         nodes.append(bchViewNode)
+            
+        let IDE = buildNodeUI(latitude: 37.9539748, longitude: -91.7720439, altitude: 340, text: "IDE")
+        nodes.append(IDE)
+        
+        let library = buildNodeUI(latitude: 37.9555752, longitude: -91.7735239, altitude: 340, text: "Library")
+        nodes.append(library)
+        
+        let norwood = buildNodeUI(latitude: 37.953677, longitude: -91.7728309, altitude: 340, text: "Norwood")
+        nodes.append(norwood)
+        
+        let fulton = buildNodeUI(latitude: 37.9549271, longitude: -91.7730291, altitude: 340, text: "Fulton")
+        nodes.append(fulton)
+        
+        let cs = buildNodeUI(latitude: 37.9559439, longitude: -91.774293, altitude: 340, text: "Computer")
+        nodes.append(cs)
+        
+        let mcnutt = buildNodeUI(latitude: 37.955952, longitude: -91.7761095, altitude: 340, text: "McNutt")
+        nodes.append(mcnutt)
+        
+        let mine = buildNodeUI(latitude: 37.9471219, longitude: -91.7793533, altitude: 340, text: "Mine")
+        nodes.append(mine)
+        
+        let humanitites = buildNodeUI(latitude: 37.9553103, longitude: -91.7742387, altitude: 340, text: "Humanities")
+        nodes.append(humanitites)
+        
+        let schrenk = buildNodeUI(latitude: 37.9528779, longitude: -91.7740627, altitude: 340, text: "Schrenk")
+        nodes.append(schrenk)
+        
+        let toomey = buildNodeUI(latitude: 37.9542786, longitude: -91.7740034, altitude: 340, text: "Toomey")
+        nodes.append(toomey)
 
         return nodes
     }
@@ -154,7 +184,7 @@ extension ARViewController {
         let location = CLLocation(coordinate: coordinate, altitude: altitude)
         //let id = id
         
-        let myView = UIView(frame: CGRect(x: 0, y: 0, width: 250, height: 600))
+        let myView = UIView(frame: CGRect(x: 0, y: 0, width: 250, height: 460))
         myView.backgroundColor = UIColor(white:1, alpha: 1)
         myView.layer.cornerRadius = 40.0
         //myView.allowUserInteraction
@@ -164,50 +194,14 @@ extension ARViewController {
         let label = UILabel(frame: CGRect(x: 0, y: 0, width: 250, height: 25))
         label.backgroundColor=UIColor(red: 0, green: 0.2784, blue: 0.0314, alpha: 1.0)
         label.textAlignment = NSTextAlignment.center
-        label.text = text
+        label.text = "Distance: 10m"
         myView.addSubview(label)
         
         let imageName = text
         let image = UIImage(named: imageName)
         let imageView = UIImageView(image: image!)
-        imageView.frame = CGRect(x: 0, y: 25, width: 250, height: 250)
+        imageView.frame = CGRect(x: 0, y: 25, width: 250, height: 400)
         myView.addSubview(imageView)
-        //myView.isUserInteractionEnabled = true
-        //contentView.bringSubviewToFront(myView)
-        
-        let imageName1 = text+"1"
-        let image1 = UIImage(named: imageName1)
-        let imageView1 = UIImageView(image: image1!)
-        imageView1.frame = CGRect(x: 0, y: 325, width: 250, height: 250)
-        myView.addSubview(imageView1)
-        
-        let button = UIButton(frame: CGRect(x: 0, y: 550, width: 250, height: 50))
-        button.setTitle("Distance(button object)", for: .normal)
-        button.backgroundColor=UIColor(red: 0, green: 0.2784, blue: 0.0314, alpha: 1.0)
-        button.layer.cornerRadius = 24.0
-        button.setTitleColor(UIColor.black, for: .normal)
-        //button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
-        //button.targetNode = self.scene
-        myView.addSubview(button)
-        
-        //sceneLocationView.bringSubviewToFront(myView)
-        //.view.bringSubviewToFront(myView)
-        //sceneLocationView.addChild(myView)
-        //let scroll = UIScrollView(frame: CGRect(x: 0, y: 30, width: 200, height: 150))
-        //scroll.backgroundColor=UIColor(red: 5, green: 0.2784, blue: 0.0314, alpha: 1.0)
-        //scroll.textAlignment = NSTextAlignment.center
-        //scroll.text = text
-        //myView.addSubview(scroll)
-        
-       
-
-        
-        //let loc1 = CLLocation(latitude: coord1.latitude, longitude: coord1.longitude)
-        //let dist = UILabel(frame: CGRect(x: 0, y: 25, width: 200, height: 25))
-        //dist.backgroundColor=UIColor(red: 0, green: 0.2784, blue: 0.0314, alpha: 1.0)
-        //dist.textAlignment = NSTextAlignment.center
-        //dist.text = text
-        //myView.addSubview(dist)
         
         return LocationAnnotationNode(location: location, view: myView)
     }

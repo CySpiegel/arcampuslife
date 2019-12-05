@@ -31,6 +31,10 @@ class eventsFeedViewController: UIViewController, CLLocationManagerDelegate, UIT
         event = eventList[indexPath.row]
         cell.lblEventName.text = event.name
         cell.lblLocation.text = event.Building
+        cell.lblRoomNumber.text = event.room
+        cell.lblDate.text = event.dateStart
+        cell.lblStartTime.text = event.timeStarts
+        
         return cell
     }
     
@@ -69,11 +73,6 @@ class eventsFeedViewController: UIViewController, CLLocationManagerDelegate, UIT
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
-
-    
-
-    
 }
 
 
