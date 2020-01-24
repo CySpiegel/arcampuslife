@@ -16,11 +16,11 @@ First, we came up with an overall design of what we wanted the project to be and
 The Sprint 3 application was our first prototype ware the system was exchanging data between the website and mobile application. The mobile application was exceptionally difficult given that nobody on the team had any experience with mobile development. It was not until after the semester had ended that we realized the mistake we made in the mobile application development in not following the MVC design pattern. We did not follow this as we just simply didn’t know about MVC it at the time. 
 
 # Employed Practices
-SWOT
-MOSCOW
-Agile Development
-Unit Testing
-Market Research ( We gave out surveys for people to answer that helped drive application design in what people wanted to see from the application)
+SWOT,
+MOSCOW,
+Agile Development,
+Unit Testing,
+Market Research ( We gave out surveys for people to answer that helped drive application design in what people wanted to see from the application),
 Customer Feedback (we ambushed people on campus to try out our application)
 
 # The long road to this application
