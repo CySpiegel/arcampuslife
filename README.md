@@ -32,7 +32,13 @@ For us on the mobile team, the only languages we knew when starting this project
 # What we learned
 Don’t ever underestimate the complexity of something simple. It may appear to be simple on the surface but their are a lot of things working under the surface to make it all happen. Version control on iOS applications sucks (Apple in their damn single developer only accounts unless you pay them, we had to work around it). Initial project scope was on point for what we wanted to deliver by the end of the semester but to take the mobile application in to a full retail release it still has a long way to go.
 
+# Project Goals
 
+# Semesters End Product
+
+
+# Images and Video
+https://youtu.be/7tNeaTzaRsQ
 
 # Classrooms/Labs 1-18 
 used https://www.gps-coordinates.net to grab exact coordinates
