@@ -6,7 +6,7 @@ The website https://mstcampus.live
 The site allows you to create accounts and create events around campus that are put into google firebase Realtime database. This then feeds the needed data to the mobile application.
 
 # The Mobile Application, S&T Live
-The phone application (this repository) pulls the relevant data from the firebase Realtime database that's feed and generated
+The mobile application (this repository) pulls the relevant data from the firebase Realtime database that's feed and generated
 by the companion website https://mstcampus.live  The data that is then downloaded allows the phone application to feed the various features like apple maps navigation, twitter style event feed, and augmented reality viewer.
 
 # How we created it
