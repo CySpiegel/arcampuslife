@@ -1,5 +1,5 @@
 # arcampuslife
-This was my teams senior design project. Our team consisted of 5 people. Three of them were split off into sub teams to create the companion website and backend systems that powers the phone application. The other 2 members were on the phone application design team.
+This was our teams senior design project. The team consisted of 5 people. Three of them were split off into sub teams to create the companion website and backend systems that powers the phone application. The other 2 members were on the phone application design team.
 
 # The Website 
 The website https://mstcampus.live
