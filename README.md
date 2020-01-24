@@ -37,7 +37,7 @@ Don’t ever underestimate the complexity of something simple. It may appear to 
 # Semesters End Product
 
 # Mobile Application Team
-Liem Ho, Matthew Stroble
+Matthew Stroble, Liem Ho
 
 # Website and Backend Team
 Tho Nguyen, Quang Nguyen, Jack Kellogg
