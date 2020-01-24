@@ -30,7 +30,9 @@ Nobody on the team knew how to develop a mobile application, it was something we
 For us on the mobile team, the only languages we knew when starting this project was C++, C#, Python, SQL. We didn’t know anything about JAva, Javascript, HTML, CSS, Swift, React, or React Native when we started this project. It was a crash course in learning new technology stacks in Rapid succession.
 
 # What we learned
-Don’t ever underestimate the complexity of something simple. It may appear to be simple on the surface but their are a lot of things working under the surface to make it all happen. Version control on iOS applications sucks (Apple in their damn single developer only accounts unless you pay them, we had to work around it). Initial project scope was on point for what we wanted to deliver by the end of the semester but to take the mobile application in to a full retail release it still has a long way to go.
+Don’t ever underestimate the complexity of something simple. It may appear to be simple on the surface but their are a lot of things working under the surface to make it all happen. Version control on iOS applications sucks (Apple in their damn single developer only accounts unless you pay them, we had to work around it). Initial project scope was on point for what we wanted to deliver by the end of the semester but to take the mobile application in to a full retail release it still has a long way to go. Augmented reality is a new an emerging technology eventhough it has been around for awhile. Due to SDK like ARKit still being in what many considder a beta, it was difficult working with given that documentation was not always up to date with how its currently working.
+
+If you're asking why only 2 of us were on the mobile and AR development for the project it is mainly due to that only the two of us have access to mac's.
 
 # Project Goals
 
