@@ -1,4 +1,4 @@
-framework module Pods_S_T_Live {
+module Pods_S_T_Live {
   umbrella header "Pods-S&T Live-umbrella.h"
 
   export *

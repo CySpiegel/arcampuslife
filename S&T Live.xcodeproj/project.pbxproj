@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		38D5605B1EF008D3B3F651B7 /* Pods_S_T_Live.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D256ACE9F10CECC17914BA73 /* Pods_S_T_Live.framework */; };
 		7B41903423976293005346B2 /* EventsFeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B41903323976293005346B2 /* EventsFeedViewController.swift */; };
 		7B41903723979F2D005346B2 /* ViewControllerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B41903623979F2D005346B2 /* ViewControllerTableViewCell.swift */; };
 		7B529744236A51B600EB9228 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B529743236A51B600EB9228 /* AppDelegate.swift */; };
@@ -22,6 +21,7 @@
 		7B9812CA236E470200113230 /* ARViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B9812C9236E470200113230 /* ARViewControllerDelegate.swift */; };
 		7B99325F236F791D006C8702 /* FireBaseEvents.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B99325E236F791D006C8702 /* FireBaseEvents.swift */; };
 		7BA33AE3238F720300A59346 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 7BA33AE2238F720300A59346 /* GoogleService-Info.plist */; };
+		F1DCB349D5F897F671F2C890 /* libPods-S&T Live.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B5DA1D31400216A7296D3FDF /* libPods-S&T Live.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,8 +43,8 @@
 		7B99325E236F791D006C8702 /* FireBaseEvents.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireBaseEvents.swift; sourceTree = "<group>"; };
 		7BA33AE2238F720300A59346 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A87EB8B4EF8DFF34A691EE71 /* Pods-S&T Live.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-S&T Live.release.xcconfig"; path = "Target Support Files/Pods-S&T Live/Pods-S&T Live.release.xcconfig"; sourceTree = "<group>"; };
+		B5DA1D31400216A7296D3FDF /* libPods-S&T Live.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-S&T Live.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8E3C10D2384E32D00A58DCD /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
-		D256ACE9F10CECC17914BA73 /* Pods_S_T_Live.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_S_T_Live.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +52,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				38D5605B1EF008D3B3F651B7 /* Pods_S_T_Live.framework in Frameworks */,
+				F1DCB349D5F897F671F2C890 /* libPods-S&T Live.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,7 +62,7 @@
 		5640D4A622FDDAD1826ADB2B /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				D256ACE9F10CECC17914BA73 /* Pods_S_T_Live.framework */,
+				B5DA1D31400216A7296D3FDF /* libPods-S&T Live.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -136,7 +136,7 @@
 				7B52973C236A51B600EB9228 /* Sources */,
 				7B52973D236A51B600EB9228 /* Frameworks */,
 				7B52973E236A51B600EB9228 /* Resources */,
-				2B142F84E7FE99E8F062D5C8 /* [CP] Embed Pods Frameworks */,
+				D5F4C597920F1732D4EBCEA0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -195,23 +195,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		2B142F84E7FE99E8F062D5C8 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-S&T Live/Pods-S&T Live-frameworks-${CONFIGURATION}-input-files.xcfilelist",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-S&T Live/Pods-S&T Live-frameworks-${CONFIGURATION}-output-files.xcfilelist",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-S&T Live/Pods-S&T Live-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		9A6DBA3C9D3A70D4224A3416 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -232,6 +215,23 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D5F4C597920F1732D4EBCEA0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-S&T Live/Pods-S&T Live-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-S&T Live/Pods-S&T Live-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-S&T Live/Pods-S&T Live-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
