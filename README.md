@@ -1,4 +1,51 @@
 # arcampuslife
+This was our teams senior design project. The team consisted of 5 people. Three of them were split off into sub teams to create the companion website and backend systems that powers the mobile application. The other 2 members were on the mobile application design team.
+
+# The Website 
+The website https://mstcampus.live
+The site allows you to create accounts and create events around campus that are put into google firebase Realtime database. This then feeds the needed data to the mobile application.
+
+# The Mobile Application, S&T Live
+The mobile application (this repository) pulls the relevant data from the firebase Realtime database that's feed and generated
+by the companion website https://mstcampus.live  The data that is then downloaded allows the phone application to feed the various features like apple maps navigation, twitter style event feed, and augmented reality viewer.
+
+# How we created it
+First, we came up with an overall design of what we wanted the project to be and what features we wanted for a retail product. Then we started resource requirements for our initial design of the whole system for phone application and website communication interlink. Once we figured out what we wanted to do (SWOT) we started out resource gathering requirements. We then employed the MOSCOW method to break down the application to what we thought we could reasonably get done in the semesters remaining time for each of our sprints. 
+
+# The Final Application
+The Sprint 3 application was our first prototype ware the system was exchanging data between the website and mobile application. The mobile application was exceptionally difficult given that nobody on the team had any experience with mobile development. It was not until after the semester had ended that we realized the mistake we made in the mobile application development in not following the MVC design pattern. We did not follow this as we just simply didn’t know about MVC it at the time. 
+
+# Employed Practices
+SWOT,
+MOSCOW,
+Agile Development,
+Unit Testing,
+Market Research ( We gave out surveys for people to answer that helped drive application design in what people wanted to see from the application),
+Customer Feedback (we ambushed people on campus to try out our application)
+
+# The long road to this application
+Nobody on the team knew how to develop a mobile application, it was something we were all vastly unprepared for and underestimated the complexity of the mobile space. This repository is actually the fifth attempt at getting the correct technology stack to do what it we wanted the application to do. We tried everything from Android + ARCORE, React native + ARCORE/ARKIT, Viro Media setup with react Native, Unity3d with wikitude SDK, and finally settling on Apple ARKIT and native swift application with ARKIT + Corelocation. Their were lots of test applications built and a lot of dead ends to these technologies but we found one that supported all of the features that we needed to get to the point ware we are today.
+
+# Why it was so challenging
+For us on the mobile team, the only languages we knew when starting this project was C++, C#, Python, SQL. We didn’t know anything about JAva, Javascript, HTML, CSS, Swift, React, or React Native when we started this project. It was a crash course in learning new technology stacks in Rapid succession.
+
+# What we learned
+Don’t ever underestimate the complexity of something simple. It may appear to be simple on the surface but their are a lot of things working under the surface to make it all happen. Version control on iOS applications sucks (Apple in their damn single developer only accounts unless you pay them, we had to work around it). Initial project scope was on point for what we wanted to deliver by the end of the semester but to take the mobile application in to a full retail release it still has a long way to go. Augmented reality is a new an emerging technology eventhough it has been around for awhile. Due to SDK like ARKit still being in what many considder a beta, it was difficult working with given that documentation was not always up to date with how its currently working.
+
+If you're asking why only 2 of us were on the mobile and AR development for the project it is mainly due to that only the two of us have access to mac's.
+
+# Project Goals
+
+# Semesters End Product
+
+# Mobile Application Team
+Matthew Stroble, Liem Ho
+
+# Website and Backend Team
+Tho Nguyen, Quang Nguyen, Jack Kellogg
+
+# Images and Video
+https://youtu.be/7tNeaTzaRsQ
 
 # Classrooms/Labs 1-18 
 used https://www.gps-coordinates.net to grab exact coordinates
